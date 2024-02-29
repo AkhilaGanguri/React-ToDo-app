@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(111, 111, 236);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  text-decoration: underline;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.task-input {
+  width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: rgb(15, 15, 15);
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: rgb(111, 111, 236);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(111, 221, 236);
+  color: white;
+}
+
+ul {
+  text-align: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 50px;
+  font-size: 30px;
+  padding: 0; /* Remove default padding */
+}
+
+li:hover {
+  cursor: pointer;
+  color: rgb(5, 209, 236);
+
+}
+
+/* Update your existing CSS */
+li {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space evenly between items */
+  border: 2px solid rgb(5, 209, 236);
+  background-color: white;
+  color:  rgb(111, 111, 236);
+  width: 400px;
+  text-align: center;
+  margin: 10px auto; /* Center the li */
+  border-radius: 10px;
+  list-style-type: none;
+  padding: 10px;
+  justify-content:baseline; /* Add padding */
+}
+#item{
+  width: 500px;
+  text-align: left;
+}
+.tick-button{
+  width: 48px;
+  height: 42px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: transparent;
+
+}
+.tick-button:hover{
+  background-color: transparent;
+  transform:scale(1.1);
+  color: white;
+}
+.arrow-button{
+  width: 48px;
+  height: 42px;
+  text-align: center;
+  font-size: 30px;
+  background-color: transparent;
+  margin-bottom:13px ;
+  margin-right: 10px;
+  margin-left: 0px;
+  transition: transform 0.1s ease-out;
+}
+.arrow-button:hover{
+  background-color: transparent;
+  transform:scale(1.1);
+}
+.remove-button:hover{
+  transform:scale(1.1);
+  background-color: transparent;
+  color: white;
+}
+
+.remove-button, .tick-button {
+  border: none;
+  font-weight: bold;
+  color: rgb(250, 252, 252);
+  font-size: 20px;
+  width: 20px;
+  height: 35px;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: transform 0.1s ease-out;
+  background-color: transparent;
+  margin-bottom: 15px;
+
+}
+
+.completed .task-completed {
+  text-decoration: line-through;
+}
